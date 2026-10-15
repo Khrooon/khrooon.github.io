@@ -122,3 +122,45 @@
   #proyectos.section{padding-top:32px}
   .project-card,.project-card.mud{min-height:370px;background-size:100% 100%,cover;background-position:center,center top}
 }
+
+
+/* v6: imágenes de proyectos completas en pantallas táctiles y textos separados. */
+@media (max-width:949px) {
+  .projects {grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .project-card,.project-card.mud,.project-card.memoria,.project-card.cine,.project-card.agenda {
+    display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;
+    min-height:0;background-image:none!important;background-color:#081b16;
+    overflow:hidden;
+  }
+  .project-card::before {
+    content:"";display:block;flex:none;width:100%;aspect-ratio:1.75 / 1;
+    background-size:contain;background-position:center;background-repeat:no-repeat;
+    background-color:#071410;
+  }
+  .project-card.mud::before{background-image:url('assets/mud-castillo-v5.webp')}
+  .project-card.memoria::before{background-image:url('assets/lecciones-olla-ovillo-v5.webp')}
+  .project-card.cine::before{background-image:url('assets/cine-v5.webp')}
+  .project-card.agenda::before{background-image:url('assets/soluciones-pizarra-v5.webp')}
+  .project-card .card-content{padding:23px 25px 26px;flex:1;display:flex;flex-direction:column;align-items:flex-start}
+  .project-card h3{margin:12px 0 9px}
+  .project-card p{margin:0 0 18px;max-width:none}
+  .project-card .card-link{margin-top:auto}
+}
+@media (max-width:760px) {
+  .projects{grid-template-columns:1fr;gap:20px}
+  .project-card::before{aspect-ratio:1.75 / 1}
+  .hero {
+    display:flex;flex-direction:column;min-height:0;
+    background:#071713!important;
+  }
+  .hero::before {
+    content:"";display:block;width:100%;height:auto;aspect-ratio:3 / 1;
+    background:url('assets/portada-ordenador-v5.webp') center center / contain no-repeat;
+    background-color:#071310;
+  }
+  .hero-inner{padding:25px 0 48px}
+  .hero-logo{width:min(330px,90%)}
+  .hero h1{margin:14px 0 18px}
+  .hero-description{margin:18px 0 26px}
+  #proyectos.section{padding-top:35px}
+}
