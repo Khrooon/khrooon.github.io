@@ -1,0 +1,124 @@
+:root{--bg:#071310;--panel:#0c201c;--text:#edf8f3;--muted:#afc8be;--accent:#45e0b5;--line:#315449;--serif:Georgia,'Times New Roman',serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid #f5c16b;outline-offset:4px}.container{width:min(1120px,calc(100% - 42px));margin:auto}.skip{position:absolute;top:-100px;left:20px;background:white;color:black;padding:8px;z-index:20}.skip:focus{top:15px}.site-header{position:sticky;top:0;z-index:10;background:#071310ed;backdrop-filter:blur(14px);border-bottom:1px solid #244138}.nav{display:flex;justify-content:space-between;align-items:center;min-height:75px}.logo{font-family:var(--serif);font-size:1.65rem;letter-spacing:.16em;text-decoration:none;white-space:nowrap}.logo span{color:var(--accent)}nav{display:flex;gap:27px}nav a{text-decoration:none;font-size:.9rem;color:#d3e4dd}nav a:hover,.card-link:hover{color:var(--accent)}.menu-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;color:white;font-size:1.5rem;padding:0 10px}.hero{position:relative;overflow:hidden;min-height:670px;display:flex;align-items:center;background:radial-gradient(ellipse at 80% 50%,#175445 0%,transparent 42%),radial-gradient(ellipse at 70% 90%,#152f32 0%,transparent 48%),linear-gradient(140deg,#06110f,#09241f 70%,#06110f)}.hero-inner{position:relative;z-index:1;padding:110px 0}.eyebrow{color:var(--accent);letter-spacing:.23em;font-size:.74rem;font-weight:750}.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.6rem,10vw,7.5rem);line-height:1;letter-spacing:.13em;margin:30px 0 22px}.hero h2{font:normal clamp(1.65rem,3.6vw,2.8rem)/1.25 var(--serif);color:var(--accent);margin:0}.hero-description{max-width:490px;color:#d6e8e0;font-size:1.12rem;margin:26px 0 35px}.button{display:inline-flex;align-items:center;gap:20px;text-decoration:none;background:#0c5543;border:1px solid var(--accent);border-radius:40px;padding:12px 24px;font-weight:650}.button:hover{background:#157459}.hero-orb{position:absolute;right:9%;top:22%;width:310px;height:310px;border-radius:50%;background:radial-gradient(circle at 30% 28%,#2b9e85,#104d46 40%,#04110f 70%);box-shadow:0 0 100px #34a7873d,inset -35px -40px 60px #020b09;opacity:.65}.stars{position:absolute;inset:0;background-image:radial-gradient(#e4fff2 1px,transparent 1px);background-size:59px 73px;opacity:.09}.section{padding:100px 0}.section-heading{text-align:center;max-width:670px;margin:0 auto 45px}.section h2,.contact h2{font:normal clamp(2.1rem,4vw,3.3rem)/1.2 var(--serif);margin:10px 0 18px}.section-heading>p:last-child,.project-card p,.more p,.history p,.contact p{color:var(--muted)}.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.project-card{min-height:325px;position:relative;overflow:hidden;border:1px solid #36534a;border-radius:16px;display:flex;align-items:flex-end;background:linear-gradient(0deg,#071310 10%,#07131088 62%,transparent),radial-gradient(circle at 75% 15%,#276b60,#102a28 60%,#071310)}.project-card.memoria{background:linear-gradient(0deg,#0d1511 8%,#0d1511a3 65%,transparent),radial-gradient(circle at 75% 10%,#806144,#292d20 65%,#0d1511)}.project-card.agenda{background:linear-gradient(0deg,#0b1420 8%,#0b1420a3 65%,transparent),radial-gradient(circle at 75% 10%,#276f86,#182d42 65%,#0b1420)}.project-card.cine{background:linear-gradient(0deg,#130f1a 8%,#130f1aa3 65%,transparent),radial-gradient(circle at 75% 10%,#714267,#2a1d37 65%,#130f1a)}.card-art{position:absolute;top:10px;right:35px;font-size:9rem;color:#d3fff021;line-height:1}.card-content{position:relative;padding:28px}.status{display:inline-block;font-size:.73rem;background:#115c47;border:1px solid #31896f;border-radius:30px;padding:3px 11px;color:#caffeb}.status.planning{background:#34364c;border-color:#686c91}.project-card h3{font:normal 1.8rem var(--serif);margin:10px 0}.project-card p{max-width:380px;margin:0 0 16px}.card-link{color:white;text-decoration:none;font-weight:700}.more{border:1px solid var(--line);border-radius:15px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;margin-top:24px;background:#10231f}.more h3{margin:0;font:normal 1.6rem var(--serif)}.more p{margin:5px 0 0}.more>span{font-size:3rem;color:#e6b96a}.history{background:linear-gradient(120deg,#0b211c,#061310)}.history-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:90px;align-items:center}.history p{margin:18px 0}.history strong{color:#d9f8e9}.timeline{list-style:none;padding:0;margin:0;border-left:2px solid #39b994}.timeline li{display:flex;gap:20px;position:relative;padding:0 0 38px 25px}.timeline li:last-child{padding-bottom:0}.timeline li:before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--accent);left:-7px;top:9px;box-shadow:0 0 0 6px #164b3b}.timeline li>span{color:var(--accent);font-weight:700}.timeline h3{margin:0}.timeline p{margin:4px 0 0}.technology{background:#081914}.tech-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;text-align:center}.tech-grid>div{padding:25px 8px;border:1px solid #28493e;border-radius:12px;background:#0d211b}.tech-grid span{font-size:2.5rem;color:var(--accent)}.tech-grid h3{font-size:.94rem;font-weight:550}.contact{text-align:center;padding:90px 0;background:radial-gradient(ellipse at center,#205142,#0b231e 65%,#081713)}.contact .container{max-width:750px}.contact-note{font-size:.83rem;margin-top:25px}footer{border-top:1px solid var(--line);padding:28px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:15px;color:var(--muted);font-size:.83rem}.footer-inner .logo{font-size:1.1rem;color:var(--text)}.footer-inner a{text-decoration:none}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:12px 18px;background:#194c3e;color:white;border:1px solid var(--accent);border-radius:10px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30}.toast.visible{opacity:1}@media(max-width:760px){.menu-toggle{display:block}nav{display:none;position:absolute;top:75px;left:0;right:0;background:#081713;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}nav.open{display:flex}.hero{min-height:590px}.hero-inner{padding:70px 0}.hero h1{letter-spacing:.06em}.hero-orb{width:220px;height:220px;right:-80px;top:60px;opacity:.32}.projects,.history-grid{grid-template-columns:1fr}.history-grid{gap:45px}.tech-grid{grid-template-columns:repeat(2,1fr)}.tech-grid>div:last-child{grid-column:1/-1}.section{padding:70px 0}.footer-inner{flex-wrap:wrap}.footer-inner .logo{width:100%}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Imágenes locales integradas a partir del concepto visual de Khrooon */
+.hero{background:linear-gradient(90deg,#03120ff2 0%,#03120fdb 32%,#03120f55 75%),url('assets/hero-castle.webp') center right/cover no-repeat;min-height:650px}
+.hero-orb,.stars{display:none}
+.project-card{background-position:center;background-size:cover}
+.project-card.mud{background-image:linear-gradient(0deg,#06120ffb 5%,#06120fd9 44%,#06120f50 100%),url('assets/khrooon-mud.webp')}
+.project-card.memoria{background-image:linear-gradient(0deg,#11110cfb 5%,#11110cda 44%,#11110c50 100%),url('assets/lecciones.webp')}
+.project-card.agenda{background-image:linear-gradient(0deg,#08141afb 5%,#08141adb 44%,#08141a50 100%),url('assets/planivida.webp')}
+.project-card.cine{background-image:linear-gradient(0deg,#130e16fb 5%,#130e16db 44%,#130e1650 100%),url('assets/cine.webp')}
+.project-card{min-height:365px}.card-art{display:none}
+.history{background:linear-gradient(90deg,#061611f2,#061611d8),url('assets/historia.webp') center/cover no-repeat}
+.contact{background:linear-gradient(0deg,#081713ed,#081713b8),url('assets/atardecer.webp') center/cover no-repeat}
+@media(max-width:760px){.hero{background-position:58% center}.hero h1{font-size:clamp(3rem,13vw,5rem)}.project-card{min-height:340px}}
+
+/* Identidad visual y encuadre corregidos: imágenes únicas, sin mosaico y sin deformación */
+.brand-logo{display:block;width:185px;height:auto;max-width:100%}
+.hero-logo{display:block;width:min(530px,95%);height:auto;filter:drop-shadow(0 2px 12px #001c18)}
+.hero h1{margin:20px 0 18px;line-height:1}
+.hero{background-image:linear-gradient(90deg,#03120ff2 0%,#03120fe6 28%,#03120f38 82%),url('assets/hero-wide.webp');background-size:cover;background-position:center center;background-repeat:no-repeat}
+.project-card,.project-card.mud,.project-card.memoria,.project-card.agenda,.project-card.cine{background-repeat:no-repeat;background-size:cover;background-position:center center}
+.project-card.mud{background-image:linear-gradient(0deg,#06120fff 0%,#06120fe6 35%,#06120f33 100%),url('assets/mud-wide.webp')}
+.project-card.memoria{background-image:linear-gradient(0deg,#11110cff 0%,#11110ce6 35%,#11110c33 100%),url('assets/lecciones-wide.webp')}
+.project-card.agenda{background-image:linear-gradient(0deg,#08141aff 0%,#08141ae6 35%,#08141a33 100%),url('assets/planivida-wide.webp')}
+.project-card.cine{background-image:linear-gradient(0deg,#130e16ff 0%,#130e16e6 35%,#130e1633 100%),url('assets/cine-wide.webp')}
+.history{background-image:linear-gradient(90deg,#061611f2,#061611d8),url('assets/historia-wide.webp');background-size:cover;background-position:center;background-repeat:no-repeat}
+.contact{background-image:linear-gradient(0deg,#081713ed,#081713b8),url('assets/atardecer-wide.webp');background-size:cover;background-position:center;background-repeat:no-repeat}
+@media(max-width:760px){.brand-logo{width:150px}.hero{background-position:62% center}.hero-logo{width:min(390px,100%)}}
+
+/* Revisión: paisaje más suave, sin texto integrado, y logo coherente */
+.hero{background-image:linear-gradient(90deg,rgba(3,18,15,.97) 0%,rgba(3,18,15,.85) 35%,rgba(3,18,15,.46) 100%),url('assets/hero-clean.webp');background-position:center,right center;background-size:cover,cover;background-repeat:no-repeat;min-height:580px}
+.hero-inner{padding:78px 0 88px}
+.hero-logo{width:clamp(240px,38vw,470px);max-width:100%;height:auto}
+.brand-logo{width:180px;height:auto}
+.hero h1{margin:14px 0 22px}
+.hero h2{font-size:clamp(1.6rem,3vw,2.5rem)}
+.hero-description{max-width:440px}
+@media(max-width:760px){.hero{min-height:530px;background-position:center,67% center;background-image:linear-gradient(90deg,rgba(3,18,15,.94),rgba(3,18,15,.67)),url('assets/hero-clean.webp')}.hero-inner{padding:65px 0 70px}.hero-logo{width:min(340px,92%)}.brand-logo{width:155px}.section{padding:62px 0}}
+@media(min-width:761px) and (max-width:1100px){.hero{background-position:center,65% center}}
+
+/* Khrooon v1: correcciones definitivas de identidad y legibilidad */
+.brand-logo {width:172px; height:auto}
+.hero-logo {width:clamp(245px,36vw,430px);max-width:100%;height:auto}
+.hero {background-image:linear-gradient(90deg,rgba(3,18,15,.86) 0%,rgba(3,18,15,.68) 39%,rgba(3,18,15,.31) 100%),url('assets/hero-clean.webp');background-size:cover;background-position:center,54% center;min-height:560px}
+.hero-inner {padding:76px 0 82px}
+.contact {background:radial-gradient(ellipse at 65% 10%,#205344 0%,#102c26 36%,#061713 85%);padding:78px 0}
+.section {padding:76px 0}
+.project-card {min-height:355px}
+.project-card.mud {background-image:linear-gradient(0deg,#06120ff8 0%,#06120fc7 42%,#06120f35 100%),url('assets/mud-wide.webp')}
+.project-card.memoria {background-image:linear-gradient(0deg,#11110cf8 0%,#11110cc7 42%,#11110c35 100%),url('assets/lecciones-wide.webp')}
+.project-card.agenda {background-image:linear-gradient(0deg,#08141af8 0%,#08141ac7 42%,#08141a35 100%),url('assets/planivida-wide.webp')}
+.project-card.cine {background-image:linear-gradient(0deg,#130e16f8 0%,#130e16c7 42%,#130e1635 100%),url('assets/cine-wide.webp')}
+@media(max-width:760px) {
+  .brand-logo {width:156px}
+  .hero {min-height:520px;background-image:linear-gradient(90deg,rgba(3,18,15,.85),rgba(3,18,15,.50)),url('assets/hero-clean.webp');background-position:center,51% center}
+  .hero-inner {padding:58px 0 66px}
+  .hero-logo {width:min(330px,95%)}
+  .section {padding:58px 0}
+  .project-card {min-height:320px}
+}
+
+/* v2: portada elegida y arte MUD independiente */
+.hero{background-image:linear-gradient(90deg,rgba(3,18,15,.86) 0%,rgba(3,18,15,.70) 32%,rgba(3,18,15,.22) 100%),url('assets/hero-v2.webp');background-size:cover;background-position:center,center 48%;min-height:550px}
+.hero-inner{padding:68px 0 72px}
+.project-card.mud{background-image:linear-gradient(0deg,#06120ffa 0%,#06120fc4 38%,#06120f0c 100%),url('assets/mud-terminal.webp');background-position:center;background-size:cover}
+#proyectos.section{padding-top:52px}
+@media(max-width:760px){.hero{min-height:520px;background-image:linear-gradient(90deg,rgba(3,18,15,.88),rgba(3,18,15,.43)),url('assets/hero-v2.webp');background-position:center,53% center}.hero-inner{padding:56px 0 62px}#proyectos.section{padding-top:48px}}
+
+/* v3 — logotipo extraído de la propuesta aprobada, sin O adicional */
+.brand-logo{width:186px;max-width:100%;height:auto;object-fit:contain}
+.hero-logo{width:min(475px,95%);max-width:100%;height:auto;object-fit:contain}
+.hero{background-image:linear-gradient(90deg,rgba(3,18,15,.78) 0%,rgba(3,18,15,.56) 36%,rgba(3,18,15,.14) 100%),url('assets/hero-v2.webp');background-position:center,center 48%;background-size:cover;min-height:525px}
+.hero-inner{padding:65px 0 65px}
+#proyectos.section{padding-top:36px}
+.project-card.mud{background-image:linear-gradient(0deg,rgba(3,17,14,.99) 0%,rgba(3,17,14,.95) 29%,rgba(3,17,14,.58) 62%,rgba(3,17,14,.08) 100%),url('assets/mud-terminal.webp');background-position:center 35%}
+.card-content{max-width:100%}
+@media(max-width:760px){
+ .brand-logo{width:165px}
+ .hero-logo{width:min(370px,98%)}
+ .hero{min-height:490px;background-image:linear-gradient(90deg,rgba(3,18,15,.76),rgba(3,18,15,.36)),url('assets/hero-v2.webp');background-position:center,53% center}
+ .hero-inner{padding:46px 0 48px}
+ #proyectos.section{padding-top:30px}
+ .project-card.mud{background-position:center 30%}
+}
+
+/* v4: fotografía elegida del MUD, taza y ordenador visibles */
+.project-card.mud {
+ background-color:#061915;
+ background-image:linear-gradient(to bottom,rgba(3,17,14,0) 0%,rgba(3,17,14,.02) 46%,rgba(3,17,14,.80) 72%,#03110e 100%),url('assets/mud-cafe.webp');
+ background-repeat:no-repeat;
+ background-size:100% 100%,100% auto;
+ background-position:center,center top;
+ min-height:400px;
+}
+.project-card.mud .card-content{position:relative;z-index:2}
+@media(max-width:760px){
+ .project-card.mud{min-height:450px;background-size:100% 100%,100% auto;background-position:center,center top}
+}
+
+/* v5 — visuales aprobados: ordenador portada, castillo MUD, olla y lana, pizarra fría */
+.hero {
+  min-height:550px;
+  background-image:linear-gradient(90deg,#03120f 0%,rgba(3,18,15,.97) 24%,rgba(3,18,15,.86) 39%,rgba(3,18,15,.12) 75%),url('assets/portada-ordenador-v5.webp');
+  background-position:center,center center;
+  background-size:cover,cover;
+  background-repeat:no-repeat;
+}
+.hero-inner{padding:70px 0}
+.hero-orb,.stars{display:none}
+#proyectos.section{padding-top:36px}
+.project-card{background-color:#061612;background-repeat:no-repeat;background-size:100% 100%,cover; background-position:center,center top;min-height:365px}
+.project-card.mud{background-image:linear-gradient(to top,#041511 0%,#041511f7 31%,#041511a8 56%,#04151100 100%),url('assets/mud-castillo-v5.webp')}
+.project-card.memoria{background-image:linear-gradient(to top,#041511 0%,#041511f7 31%,#041511a8 56%,#04151100 100%),url('assets/lecciones-olla-ovillo-v5.webp')}
+.project-card.agenda{background-image:linear-gradient(to top,#041511 0%,#041511f7 31%,#041511a8 56%,#04151100 100%),url('assets/soluciones-pizarra-v5.webp')}
+.project-card.cine{background-image:linear-gradient(to top,#041511 0%,#041511f7 31%,#041511a8 56%,#04151100 100%),url('assets/cine-v5.webp')}
+.project-card .card-content{z-index:1;position:relative}
+.project-card .card-art{display:none}
+@media(min-width:950px){.projects{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.project-card{min-height:380px}.card-content{padding:18px}.project-card h3{font-size:1.43rem}.project-card p{font-size:.9rem;line-height:1.5}}
+@media(max-width:760px){
+  .hero{min-height:510px;background-image:linear-gradient(90deg,rgba(3,18,15,.96) 0%,rgba(3,18,15,.84) 45%,rgba(3,18,15,.30) 100%),url('assets/portada-ordenador-v5.webp');background-position:center,59% center;background-size:cover,auto 100%}
+  .hero-inner{padding:56px 0 64px}
+  #proyectos.section{padding-top:32px}
+  .project-card,.project-card.mud{min-height:370px;background-size:100% 100%,cover;background-position:center,center top}
+}
