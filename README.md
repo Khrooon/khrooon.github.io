@@ -1,13 +1,10 @@
-# KHROOON — versión 6
+# Khrooon — versión 11
 
-Web estática para publicar en https://khrooon.github.io/
-
-## Mejoras
-- En tablets y móviles las imágenes de las tarjetas se muestran completas arriba, sin texto superpuesto.
-- En pantallas estrechas la portada muestra primero el ordenador completo y después el contenido, sin taparlo.
-- Enlaces de GitHub actualizados a https://github.com/khrooon
-- Escritorio mantiene el diseño de la v5.
+Web estática para GitHub Pages. La portada tiene tres ambientes (azul nocturno, azul grisáceo y neutro) con selector visible. El fondo es una imagen independiente; logotipo, botones y texto son elementos HTML/CSS. El favicon de los tres anillos aparece solo en la cabecera.
 
 ## Publicación
-Sube `index.html`, `styles.css`, `script.js` y `assets/` a la raíz del repositorio `khrooon/khrooon.github.io`, sustituyendo los archivos de la versión anterior.
-No subas la carpeta `web_khrooon_v6` como carpeta anidada.
+Sube **el contenido de este ZIP**, no el ZIP en sí, a la raíz de `khrooon/khrooon.github.io`, reemplazando `index.html`, `styles.css`, `script.js` y la carpeta `assets`.
+
+**Importante:** elimina primero los archivos antiguos que sobren dentro de `assets` en GitHub, porque subir archivos nuevos no borra los anteriores automáticamente. La carpeta `assets` de este ZIP está depurada.
+
+La pantalla verde del ordenador se dibuja mediante HTML/CSS encima de la fotografía. Su alineación es aproximada en pantallas grandes; se oculta en móvil para evitar superposiciones.
