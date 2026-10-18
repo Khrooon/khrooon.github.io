@@ -57,3 +57,26 @@ body[data-theme=noche] .hero-backdrop{filter:brightness(.68) saturate(1.2) hue-r
 @media(max-width:760px){.hero{min-height:0}.hero-copy{width:100%;max-width:520px}.hero-inner{padding:38px 0 115px}.hero-logo{width:min(520px,100%)}.hero-shade{background:linear-gradient(180deg,rgba(2,13,14,.88),rgba(2,13,14,.68) 52%,rgba(2,13,14,.28))}.hero-actions{gap:12px}.hero-actions .button{min-width:0}.brand-name{font-size:1.15rem}.site-header .nav{gap:12px}.projects{align-items:stretch}}
 @media(max-width:450px){.hero-inner{padding:32px 0 125px}.hero-logo{width:100%}.hero h2{font-size:clamp(1.55rem,7vw,2rem)}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .button{width:100%;max-width:330px}.brand-icon{width:43px;height:43px}.brand-name{font-size:1.06rem}.theme-picker{max-width:calc(100vw - 18px)}}
 @media(prefers-reduced-motion:reduce){.project-card,.hero-actions .button{transition:none}}
+
+
+/* Khrooon v15: composicion centrada y biblioteca protagonista */
+/* El fondo original se conserva: zoom y foco izquierdo para reducir la universidad. */
+.hero-backdrop{background-position:18% center;background-size:auto 118%;}
+.hero-shade{background:linear-gradient(90deg,rgba(2,13,14,.81) 0%,rgba(2,13,14,.62) 36%,rgba(2,13,14,.17) 69%,transparent 100%)}
+.hero-copy{width:min(690px,62%);text-align:center;margin-right:auto}
+.hero h1{display:flex;justify-content:center}
+.hero-logo{margin-inline:auto;width:min(650px,100%)}
+.hero h2{margin-inline:auto}
+.hero-description{margin-inline:auto}
+.hero-actions{justify-content:center}
+@media(max-width:1100px){.hero-backdrop{background-size:auto 120%;background-position:12% center}.hero-copy{width:min(650px,65%)}}
+@media(max-width:760px){.hero-backdrop{background-size:auto 112%;background-position:9% center}.hero-shade{background:linear-gradient(180deg,rgba(2,13,14,.86),rgba(2,13,14,.67) 58%,rgba(2,13,14,.40))}.hero-copy{width:100%;max-width:520px;margin-inline:auto}.hero-actions{justify-content:center}}
+@media(max-width:450px){.hero-backdrop{background-size:auto 105%;background-position:8% center}.hero-actions .button{margin-inline:auto}}
+
+/* v16: centrar el bloque principal respecto a toda la pantalla */
+.hero-inner{width:100%;}
+.hero-copy{width:min(780px,100%);max-width:780px;margin-inline:auto;text-align:center;}
+.hero h1,.hero h2,.hero-description{margin-inline:auto;text-align:center;}
+.hero-logo{display:block;width:min(720px,100%);margin-inline:auto;}
+.hero-actions{justify-content:center;}
+@media(max-width:760px){.hero-copy{width:100%;max-width:100%;margin-inline:auto}.hero-logo{width:min(580px,100%)}}
