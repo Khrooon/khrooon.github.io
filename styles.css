@@ -19,13 +19,41 @@ body[data-theme=noche] .hero-backdrop{filter:brightness(.68) saturate(1.2) hue-r
 /* v12: keep the photo layers above the hero background, behind the content */
 .hero-backdrop{z-index:0}.hero-shade{z-index:1}.hero-inner{z-index:2}
 
-/* v13: portada completa en pantallas anchas, sin recortar la fotografía */
-@media (min-width: 761px) {
-  .hero { min-height: 0; aspect-ratio: 1891 / 831; }
-  .hero-backdrop { background-size: 100% 100%; background-position: center; }
-  .hero-inner { padding-top: 34px; padding-bottom: 52px; }
-}
-/* En móviles se prioriza el texto legible; la foto ocupa el espacio disponible. */
-@media (max-width: 760px) {
-  .hero-backdrop { background-size: cover; background-position: 58% center; }
-}
+/* v2: logotipo con subtitulo integrado; escalado responsive */
+.hero-copy{width:min(600px,56%)}
+.hero-logo{width:min(550px,100%);max-width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 5px 12px rgba(0,15,15,.65))}
+@media(max-width:900px){.hero-copy{width:min(530px,60%)}.hero-logo{width:100%}}
+@media(max-width:760px){.hero-copy{width:100%;max-width:490px}.hero-logo{width:min(470px,100%)}}
+@media(max-width:450px){.hero-logo{width:100%}}
+
+
+/* Khrooon v3 — ajustes de portada, navegacion y tarjetas */
+.site-header .nav{gap:22px}
+.site-header .logo{gap:13px;text-decoration:none;flex-shrink:0}
+.brand-name{font:600 clamp(1.12rem,1.7vw,1.45rem)/1.2 Georgia,serif;color:#d6eee5;letter-spacing:.055em;text-shadow:0 2px 9px #0007}
+.site-header nav{margin-left:auto}
+.site-header nav a{transition:color .18s ease}
+.site-header nav a:hover,.site-header nav a:focus-visible{color:#a6e5ce}
+.hero-shade{background:linear-gradient(90deg,rgba(2,13,14,.89) 0%,rgba(2,13,14,.72) 28%,rgba(2,13,14,.18) 56%,rgba(2,13,14,0) 78%)}
+.hero-copy{width:min(670px,59%)}
+.hero-inner{padding-top:48px;padding-bottom:112px}
+.hero h1{margin:0 0 22px}
+.hero-logo{width:min(650px,100%);height:auto;display:block;object-fit:contain;filter:drop-shadow(0 8px 14px #001511b3)}
+.hero h2{max-width:630px;text-wrap:balance}
+.hero-actions{gap:14px;align-items:stretch}
+.hero-actions .button{min-height:48px;min-width:195px;padding:12px 19px;display:inline-flex;align-items:center;justify-content:center;line-height:1.25}
+.hero-actions .button:first-child{background:#086655;border-color:#9ad9c5;box-shadow:0 5px 16px #0008}
+.hero-actions .button:nth-child(2){background:rgba(5,31,28,.62);border:1px solid #a1c8bc;box-shadow:0 5px 16px #0006}
+.hero-actions .button:hover,.hero-actions .button:focus-visible{transform:translateY(-2px);box-shadow:0 9px 22px #000a}
+/* El texto verde ya forma parte de la pantalla del ordenador en la imagen de portada. */
+.crt-text{display:none!important}
+.projects{align-items:stretch}
+.project-card{height:100%;display:flex;flex-direction:column;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+.project-card .card-content{position:relative;display:flex;flex-direction:column;flex:1;min-height:0}
+.project-card .card-link{margin-top:auto;align-self:flex-start}
+.project-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #0008}
+@media(max-width:1100px){.hero-copy{width:min(610px,62%)}.hero-logo{width:100%}}
+@media(max-width:900px){.hero-copy{width:min(540px,66%)}.hero-inner{padding:48px 0 112px}.hero-actions .button{min-width:170px}.brand-name{font-size:1.16rem}}
+@media(max-width:760px){.hero{min-height:0}.hero-copy{width:100%;max-width:520px}.hero-inner{padding:38px 0 115px}.hero-logo{width:min(520px,100%)}.hero-shade{background:linear-gradient(180deg,rgba(2,13,14,.88),rgba(2,13,14,.68) 52%,rgba(2,13,14,.28))}.hero-actions{gap:12px}.hero-actions .button{min-width:0}.brand-name{font-size:1.15rem}.site-header .nav{gap:12px}.projects{align-items:stretch}}
+@media(max-width:450px){.hero-inner{padding:32px 0 125px}.hero-logo{width:100%}.hero h2{font-size:clamp(1.55rem,7vw,2rem)}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .button{width:100%;max-width:330px}.brand-icon{width:43px;height:43px}.brand-name{font-size:1.06rem}.theme-picker{max-width:calc(100vw - 18px)}}
+@media(prefers-reduced-motion:reduce){.project-card,.hero-actions .button{transition:none}}
