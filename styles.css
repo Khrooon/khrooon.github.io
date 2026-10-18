@@ -18,3 +18,14 @@ body[data-theme=noche] .hero-backdrop{filter:brightness(.68) saturate(1.2) hue-r
 
 /* v12: keep the photo layers above the hero background, behind the content */
 .hero-backdrop{z-index:0}.hero-shade{z-index:1}.hero-inner{z-index:2}
+
+/* v13: portada completa en pantallas anchas, sin recortar la fotografía */
+@media (min-width: 761px) {
+  .hero { min-height: 0; aspect-ratio: 1891 / 831; }
+  .hero-backdrop { background-size: 100% 100%; background-position: center; }
+  .hero-inner { padding-top: 34px; padding-bottom: 52px; }
+}
+/* En móviles se prioriza el texto legible; la foto ocupa el espacio disponible. */
+@media (max-width: 760px) {
+  .hero-backdrop { background-size: cover; background-position: 58% center; }
+}
