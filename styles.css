@@ -80,3 +80,31 @@ body[data-theme=noche] .hero-backdrop{filter:brightness(.68) saturate(1.2) hue-r
 .hero-logo{display:block;width:min(720px,100%);margin-inline:auto;}
 .hero-actions{justify-content:center;}
 @media(max-width:760px){.hero-copy{width:100%;max-width:100%;margin-inline:auto}.hero-logo{width:min(580px,100%)}}
+
+/* Khrooon v17 — cabecera flotante translucida tipo cristal */
+.site-header{
+ position:sticky;top:0;z-index:100;
+ background:rgba(7,29,27,.24)!important;
+ -webkit-backdrop-filter:blur(13px) saturate(115%);
+ backdrop-filter:blur(13px) saturate(115%);
+ border-bottom:1px solid rgba(210,241,231,.20);
+ box-shadow:0 6px 22px rgba(0,0,0,.10);
+}
+.site-header .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,3vw,34px)}
+.site-header .logo{display:inline-flex;align-items:center;gap:12px;min-width:0}
+.site-header .brand-icon{width:51px;height:51px;object-fit:contain;border-radius:10px}
+.site-header .brand-name{font-size:clamp(1.1rem,2vw,1.45rem);font-weight:650;color:#effcf5;text-shadow:0 2px 10px rgba(0,0,0,.55)}
+.site-header nav{display:flex;align-items:center;gap:clamp(10px,2vw,29px);margin-left:auto}
+.site-header nav a{color:#f3faf6;text-shadow:0 1px 6px rgba(0,0,0,.65);font-weight:500;white-space:nowrap}
+.site-header nav a:hover,.site-header nav a:focus-visible{color:#b6f2d8}
+/* La biblioteca se prolonga visualmente por debajo de la cabecera */
+.hero{margin-top:-76px;padding-top:76px}
+@media(max-width:760px){
+ .site-header .nav{min-height:66px}
+ .site-header .brand-icon{width:43px;height:43px}
+ .site-header nav{display:none;position:absolute;top:66px;left:0;right:0;margin:0;padding:18px 22px 22px;flex-direction:column;align-items:stretch;gap:12px;background:rgba(5,27,24,.93);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-bottom:1px solid rgba(210,241,231,.25)}
+ .site-header nav.open{display:flex}
+ .site-header .menu-toggle{display:block;margin-left:auto;color:#fff}
+ .hero{margin-top:-66px;padding-top:66px}
+}
+@media(prefers-reduced-transparency:reduce){.site-header{background:rgba(6,26,23,.94)!important}}
